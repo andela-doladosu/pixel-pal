@@ -1,0 +1,125 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-family: Verdana;
+  background: #9e9;
+  color:black;
+}
+header{
+  border-radius: 50px 50px 20px 20px;
+  background: #e99;
+  font-size: 150%;
+  text-align: center;
+  padding: 10px;
+  padding-top: 4px;
+  color:white;
+}
+canvas{
+  background: #fff;
+  box-shadow: 0 0 8px black;
+  border-radius: 10px;
+  border: 8px inset #999;
+  position: relative;
+  border: 20px dotted #69e;
+}
+button{
+  display: block;
+}
+.tool, #color{
+  width: 60px;
+  height: 60px;
+  border: 1px solid white;
+  background: #69c;
+  margin-bottom: 4px;
+  border-radius: 3px;
+  box-shadow: 0 0 4px white;
+  padding: 12px 5px;
+  text-align: center;
+  font-weight: bold;
+}
+.tool:hover{
+  box-shadow: 0 0 8px red;
+}
+#bg_div{
+  margin: 10px auto;
+  width: 60%;
+  min-height: 400px;
+  background: #e99;
+  padding: 30px;
+  padding-top: 0;
+  border-radius: 30px;
+  box-shadow: 0 0 20px black;
+  border: 20px inset #bbb;
+}
+#toolbox, #canvas_box{
+  display: inline-block;
+  margin: 0;
+
+}
+#canvas_box{
+  margin-left: 50px;
+}
+#toolbox{
+ padding: 4px;
+ float: left;
+ background: #454545;
+ border-radius: 5px;
+ margin-left: 120px;
+ box-shadow: 0 0 8px black;
+}
+#size_picker{
+  position: fixed;
+  top:200px;
+  left:500px;
+  z-index:5;
+  padding: 40px;
+  border-radius: 20px;
+  border: 5px solid blue;
+  background: #bbf;
+  display: none;
+}
+#size_value, #pick_size{
+  font-size: 20px;
+  padding: 10px;
+}
+#size_value{
+  width: 50px;
+}
+#pick_size{
+  color: white;
+  background: blue;
+}
+#color_picker{
+    opacity: 0;
+    padding: 0;
+    margin: -5px;
+    width: 60px; 
+    height: 20px;
+}
+#pencil{
+  background:url("../img/pencil.png");
+  background-position: center;
+  background-size: cover; 
+}
+#eraser{
+  background:url("../img/eraser.jpg");
+  background-position: center;
+  background-size: cover; 
+}
+#color{
+  background:url("../img/palette.jpg");
+  background-position: center;
+  background-size: cover; 
+}
+#size{
+  background:url("../img/size.png");
+  background-position: center;
+  background-size: cover; 
+}
+
+
+
+
+
+
