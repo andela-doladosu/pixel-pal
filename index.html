@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <link rel="stylesheet" type="text/css" href="css/pxlpl.css">
+      <title>Pixel Pal Paint Pad</title>
+  </head>
+  <body>
+    
+    <div id="bg_div">
+        <header>
+          <h1>pixel pal</h1>
+      </header>
+      <div id="toolbox">
+        <button class="tool" id="pencil">
+        </button>
+        <button class="tool" id="eraser">
+        </button>
+        <button class="tool" id="size">
+        </button>
+        <button class="" id="color">
+          <form>
+            <input type="color" pattern="#[a-f0-9]{6}" title="hexadecimal color" placeholder="#000000" id="color_picker">
+          </form>
+        </button>
+        <div id="size_picker">
+          <form>
+              <input type="number" id="size_value" min="1" max="70"/>
+              <input type="submit" id="pick_size" value="done">
+          </form>
+        </div><!--end size_picker div-->
+      </div><!--toolbox div ends-->
+      <div id="canvas_box">
+        <canvas id="canvas" width="450" height="450">
+        </canvas>
+      </div><!--canvas_box div ends-->
+    </div><!--bg-div div ends-->
+   <script src="js/pxlpl.js"></script>
+  <body>
+</html>
